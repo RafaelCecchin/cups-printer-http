@@ -1,0 +1,4 @@
+#!/bin/bash
+
+systemctl enable cups-printer-http
+systemctl start cups-printer-http

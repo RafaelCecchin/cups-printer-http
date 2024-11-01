@@ -1,0 +1,10 @@
+[Unit]
+Description=Serviço de Impressão HTTP para CUPS
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /usr/local/bin/cups-printer-http.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

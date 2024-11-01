@@ -1,0 +1,11 @@
+Package: cups-printer-http
+Version: 1.0
+Section: utils
+Priority: optional
+Architecture: all
+Essential: no
+Depends: python3, python3-flask, cups-client
+Maintainer: Rafael Cecchin <contatorafaelcecchin@gmail.com>
+Description: Serviço de impressão HTTP em Python para CUPS
+  Esse pacote instala um servidor HTTP que escuta requisições de impressão e executa 
+  o comando lp para enviar o arquivo para a impressora conectada ao CUPS.
